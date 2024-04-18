@@ -1,9 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Testing from './components/testing.jsx'
+import Card from './components/Card'
 
-// const nombre = 'Nicolás'
 const root = ReactDOM.createRoot(document.getElementById('root'))
+
+
+root.render(<Card nombre="kakorrimbis" 
+profesion="barbero, tatuador, futuro influencer" 
+edad="20" 
+color="#00FFFF"
+colord="negro hpta"  />)
+
+/* 
 const user = {
   Nombre:'Puta',
   Apellido:'Tonta',
@@ -15,14 +23,11 @@ function basura(user){
 }
 const element = <h1>Hola, {basura(user)}. Tienes {user.Edad} añitos de culiada</h1>
 const element2 = <img src={user.Avatar} alt="Avatar" width="300px" height="400px"/>
-const component = <Testing/>
 
 
 const elementfinal = (
   <div>
     {element}
     {element2}
-    {component}
   </div>
-)
-root.render(elementfinal)
+) */

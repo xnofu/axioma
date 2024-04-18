@@ -1,0 +1,28 @@
+.card {
+    margin: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+.back{
+    background-color: rgb(53, 190, 83);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tits{
+    font-size: smaller;
+    color: antiquewhite;   
+}
+.sex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+img {
+    width: 150px;
+}
