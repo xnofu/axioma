@@ -1,7 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
+import Testing from './components/testing.jsx'
 
 // const nombre = 'Nicolás'
+const root = ReactDOM.createRoot(document.getElementById('root'))
 const user = {
   Nombre:'Puta',
   Apellido:'Tonta',
@@ -13,14 +15,14 @@ function basura(user){
 }
 const element = <h1>Hola, {basura(user)}. Tienes {user.Edad} añitos de culiada</h1>
 const element2 = <img src={user.Avatar} alt="Avatar" width="300px" height="400px"/>
+const component = <Testing/>
+
 
 const elementfinal = (
   <div>
     {element}
     {element2}
+    {component}
   </div>
 )
-
-const contain= document.getElementById('root')
-ReactDOM.render(elementfinal, contain)
-
+root.render(elementfinal)
